@@ -6,9 +6,11 @@ const INITIAL_STATE: ICartState = {
 };
 
 const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
+  console.log(state, action)
+
   switch(action.type) {
     case 'ADD_PRODUCT_TO_CART': {
-      const product = action.payload;
+      const { product } = action.payload;
       
       return {
         ...state,

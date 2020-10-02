@@ -6,5 +6,5 @@ export function addProductToCart(product: IProduct) {
     payload: {
       product,
     }
-  }
+  };
 }
