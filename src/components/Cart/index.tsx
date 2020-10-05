@@ -10,7 +10,7 @@ const Cart: React.FC = () => {
   const cart = useSelector<IState, ICartItem[]>(state => state.cart.items);
 
   return (
-    <table>
+    <table style={{ marginTop: 20 }}>
       <thead>
         <tr>
           <th>Produto</th>
