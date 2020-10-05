@@ -5,10 +5,17 @@ import Catalog from './components/Catalog';
 
 import store from './store';
 
+import './assets/styles/global.css';
+
+import logo from './assets/images/redux-logo.png';
+
 function App() {
   return (
     <Provider store={store}>
+      <img src={logo} alt="Redux"/>
+      
       <Catalog />
+
       <Cart />
     </Provider>
   );
